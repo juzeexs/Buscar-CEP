@@ -2,6 +2,8 @@
 
 Um formulário de endereço moderno e responsivo que utiliza a **API ViaCEP** para preencher dados automaticamente.
 
+🌐 **Acesse o projeto:** [https://buscarseucep.netlify.app/](https://buscarseucep.netlify.app/)
+
 ## 🚀 Funcionalidades
 
 * **Máscara Automática**: Formata o CEP no padrão `00000-000` em tempo real.
