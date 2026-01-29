@@ -1,4 +1,4 @@
-# 📍 Busca de CEP Automática
+# 📍 Busca de CEP 
 
 Um formulário de endereço moderno e responsivo que utiliza a **API ViaCEP** para preencher dados automaticamente.
 
