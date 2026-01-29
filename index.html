@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atividade do CEP</title>
-  <script src="atividadedocep.js" defer></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de CEP Responsiva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Buscar CEP</h1>
 
-  <form id="cep-form">
-    <label for="CEP">Digite o seu CEP:</label>
-    <input type="text" id="CEP" name="CEP" placeholder="CEP" required />
-    <button type="submit">Buscar</button>
-  </form>
+    <div class="container">
+        <form id="address-form">
+            <h2>Busca de CEP</h2>
+            <p class="subtitle">Insira o CEP para preencher os dados automaticamente.</p>
 
-  <div id="resultado"></div>
+            <div class="form-row">
+                <div class="form-group flex-1">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" placeholder="00000-000" maxlength="9" required>
+                    <span id="error-message" class="error"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group flex-3">
+                    <label for="logradouro">Rua/Logradouro</label>
+                    <input type="text" id="logradouro" placeholder="Rua, Avenida..." readonly>
+                </div>
+                <div class="form-group flex-1">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" placeholder="123">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group flex-1">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group flex-3">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" readonly>
+                </div>
+                <div class="form-group flex-1">
+                    <label for="uf">Estado (UF)</label>
+                    <input type="text" id="uf" readonly>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Confirmar Busca</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
